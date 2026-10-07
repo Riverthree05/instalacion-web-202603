@@ -1,0 +1,328 @@
+/* ==============================
+   ESTILOS GENERALES
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* ==============================
+   NAVEGACIÓN
+================================= */
+
+header {
+    background-color: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 70px;
+    padding: 0 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #60a5fa;
+}
+
+/* ==============================
+   PÁGINA DE INICIO
+================================= */
+
+.hero {
+    min-height: 500px;
+    padding: 60px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1d4ed8
+    );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #e5e7eb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+
+    background-color: white;
+    color: #1d4ed8;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #dbeafe;
+}
+
+/* ==============================
+   CONTENIDO
+================================= */
+
+.contenido {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.contenido > h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contenido > p {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #4b5563;
+}
+
+/* ==============================
+   TARJETAS
+================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #1d4ed8;
+    margin-bottom: 15px;
+}
+
+/* ==============================
+   CARACTERÍSTICAS TÉCNICAS
+================================= */
+
+.page-header {
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(135deg, #111827, #1d4ed8);
+
+    color: white;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    max-width: 700px;
+    margin: auto;
+    color: #e5e7eb;
+}
+
+.tech-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.tech-card {
+    background-color: white;
+    padding: 25px;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.tech-card:hover {
+    transform: translateY(-4px);
+}
+
+.tech-card h2 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.tech-card p {
+    color: #4b5563;
+}
+
+/* ==============================
+   TABLA DEL SERVIDOR
+================================= */
+
+.server-info {
+    margin-top: 60px;
+}
+
+.server-info h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background-color: #1d4ed8;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #111827;
+    color: #d1d5db;
+
+    text-align: center;
+    padding: 25px;
+}
+
+/* ==============================
+   DISEÑO RESPONSIVE
+================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cards,
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+}
