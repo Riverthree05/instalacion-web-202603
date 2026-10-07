@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Instalación Web
 
 Proyecto desarrollado para la práctica de instalación y despliegue
@@ -53,3 +54,7 @@ Node.js y acceso mediante SSH.
 Proyecto académico.
 
 Ingeniería en Desarrollo y Gestión de Software.
+=======
+# instalacion-web-202603
+Proyecto académico de instalación, versionamiento y despliegue de un sitio web.
+>>>>>>> f1093f4c385b0e895f286f8c72d346ef7f762d08
